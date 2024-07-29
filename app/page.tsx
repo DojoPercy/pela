@@ -8,16 +8,17 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import MarqueeComp from "@/components/Marquee";
 import About from "./_components/About";
 
-
-
 export default function Home() {
   return (
     <ParallaxProvider>
-    <main className="flex flex-col justify-start items-start w-full overflow-hidden ">
-     <Header />
-  <MarqueeComp/>
-    <About />
-    </main>
+      <main className="flex flex-col justify-start items-start w-full overflow-hidden ">
+        <Header />
+        <MarqueeComp />
+        <About />
+        <div className="h-56">
+
+        </div>
+      </main>
     </ParallaxProvider>
   );
 }

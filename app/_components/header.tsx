@@ -20,10 +20,10 @@ const Header: React.FC = () => {
     slidesToScroll: 1,
   };
   return (
-    <div className="w-full h-[60vh] lg:h-[100vh] relative">
+    <div className="w-full h-[85vh] lg:h-[100vh] relative">
       <ParallaxBanner
         layers={[{ image: "/sliders/slider1.jpg", speed: -20 }]}
-        className="aspect-[2/1] h-[75vh] lg:h-[100vh]"
+        className="aspect-[2/1] h-[85vh] lg:h-[100vh]"
       >
         <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-b from-darkGray to-lightGray z-10 opacity-20"></div>
         <header className="absolute top-0 right-0 w-full z-20 font-manrope flex flex-col">
@@ -47,34 +47,32 @@ const Header: React.FC = () => {
             </ul>
           </div>
         </header>
-        <div className="absolute inset-0 flex items-center justify-start w-full px-5 lg:px-24">
-          <div className="flex flex-col justify-start items-start lg:mt-20">
+        <div className="absolute inset-0 flex items-center justify-center lg:justify-start w-full px-5  lg:px-24">
+          <div className="flex flex-col justify-start items-start lg:mt-20 mt-20">
           <div>
-          <span className="text-[1.2rem] flex-wrap lg:text-[3.5rem] text-white z-20 font-manrope font-[600] leading-[6rem] h-full w-[80%]">
-            
-            </span>
-            <TextSlider TEXTS={['CONFERENCE', 'EXHIBITION', `AWARDS ${year}`]} />
+         
+            <TextSlider TEXTS={['CONFERENCE.', 'EXHIBITION.', `AWARDS ${year}.`]} />
           </div>
-            <div className=" mt-24 mx-5 lg:mx-5 flex flex-row justify-start space-x-3 lg:space-x-10">
+            <div className="mt-10  lg:mt-24  lg:mx-5 flex flex-row justify-start space-x-1 lg:space-x-10">
               <div className="flex space-x-1 justify-start ">
                 <div className="w-[0.1rem] h-10 bg-gradient-to-r-custom"></div>
                 <div className="flex flex-col justify-start ">
-                  <h4 className="text-white text-3xl">10K</h4>
-                  <span className="text-bgColor text-lg">Energy Leaders</span>
+                  <h4 className="text-white text-2xl  lg:text-3xl">10K</h4>
+                  <span className="text-bgColor text-sm  lg:text-lg">Energy Leaders</span>
                 </div>
               </div>
               <div className="flex space-x-1 justify-start ">
                 <div className="w-[0.1rem] h-10 bg-gradient-to-r-custom"></div>
                 <div className="flex flex-col justify-start ">
-                  <h4 className="text-white text-3xl">200</h4>
-                  <span className="text-bgColor text-lg">Top Companies</span>
+                  <h4 className="text-white text-2xl  lg:text-3xl">200</h4>
+                  <span className="text-bgColor text-sm  lg:text-lg">Top Companies</span>
                 </div>
               </div>
               <div className="flex space-x-1 justify-start ">
                 <div className="w-[0.1rem] h-10 bg-gradient-to-r-custom"></div>
                 <div className="flex flex-col justify-start ">
-                  <h4 className="text-white text-3xl">$20Bn</h4>
-                  <span className="text-bgColor text-lg">Investments</span>
+                  <h4 className="text-white text-2xl  lg:text-3xl">$20Bn</h4>
+                  <span className="text-bgColor text-sm  lg:text-lg">Investments</span>
                 </div>
               </div>
               
