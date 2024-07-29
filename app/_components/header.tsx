@@ -4,6 +4,7 @@ import GradientCard from "@/components/glowing_button";
 import VerticalSlider from "@/components/vertical_prop"; // Import the VerticalSlider component
 import React from "react";
 import { ParallaxBanner } from "react-scroll-parallax";
+import TextSlider from "./text_transitions";
 
 const Header: React.FC = () => {
   const getCurrentYear = (): number => {
@@ -11,12 +12,18 @@ const Header: React.FC = () => {
   };
 
   const year = getCurrentYear().toString();
-
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
-    <div className="w-full h-[100vh] relative">
+    <div className="w-full h-[60vh] lg:h-[100vh] relative">
       <ParallaxBanner
         layers={[{ image: "/sliders/slider1.jpg", speed: -20 }]}
-        className="aspect-[2/1] h-[100vh]"
+        className="aspect-[2/1] h-[75vh] lg:h-[100vh]"
       >
         <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-b from-darkGray to-lightGray z-10 opacity-20"></div>
         <header className="absolute top-0 right-0 w-full z-20 font-manrope flex flex-col">
@@ -42,17 +49,13 @@ const Header: React.FC = () => {
         </header>
         <div className="absolute inset-0 flex items-center justify-start w-full px-5 lg:px-24">
           <div className="flex flex-col justify-start items-start lg:mt-20">
-            <span className="text-[1.2rem] flex-wrap lg:text-[3.5rem] text-white z-20 font-manrope font-[600] leading-[6rem] h-full w-[100%]">
-              ATTEND THE PREMIER ENERGY LEADERSHIP
+          <div>
+          <span className="text-[1.2rem] flex-wrap lg:text-[3.5rem] text-white z-20 font-manrope font-[600] leading-[6rem] h-full w-[80%]">
+            
             </span>
-            <div className="relative h-[3rem] overflow-hidden z-20 w-[100%]">
-              <VerticalSlider
-                words={["CONFERENCE.", "EXHIBITION.", `Awards ${year}.`]}
-                duration={3000}
-              />
-            </div>
-
-            <div className=" mt-24 mx-5 lg:mx-32 flex flex-row justify-start space-x-3 lg:space-x-10">
+            <TextSlider TEXTS={['CONFERENCE', 'EXHIBITION', `AWARDS ${year}`]} />
+          </div>
+            <div className=" mt-24 mx-5 lg:mx-5 flex flex-row justify-start space-x-3 lg:space-x-10">
               <div className="flex space-x-1 justify-start ">
                 <div className="w-[0.1rem] h-10 bg-gradient-to-r-custom"></div>
                 <div className="flex flex-col justify-start ">

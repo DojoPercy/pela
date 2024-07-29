@@ -5,17 +5,18 @@ import { EmblaOptionsType } from "embla-carousel";
 import AnimatedSection from "./_components/gsapAnime";
 import Header from "./_components/header";
 import { ParallaxProvider } from "react-scroll-parallax";
+import MarqueeComp from "@/components/Marquee";
+import About from "./_components/About";
 
 
-const OPTIONS: EmblaOptionsType = { loop: true, duration: 100 };
+
 export default function Home() {
   return (
     <ParallaxProvider>
     <main className="flex flex-col justify-start items-start w-full overflow-hidden ">
      <Header />
-      <div className="h-[100vh]">
-
-      </div>
+  <MarqueeComp/>
+    <About />
     </main>
     </ParallaxProvider>
   );
