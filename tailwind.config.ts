@@ -26,13 +26,16 @@ const config: Config = {
         customGreen: '#5B714C',
         customOrange: '#F27038',
         nav:'#C4C4C4',
+        blueish:"#071D52",
+        secondaryWhite: "#F3F3F3"
       },
       fontFamily: {
         manrope: ["var(--font-manrope)"],
+        urban: ["var(--font-urban)"],
       },
       backgroundImage: {
         'gradient-to-b': 'linear-gradient(to bottom, #595858, #EEE7E7)',
-        'gradient-to-r-custom': 'linear-gradient(to right, #5B714C, #F27038)',
+        'gradient-to-r-custom': 'linear-gradient(to right, #F27038, #ffffff)',
         'border-gradient': 'linear-gradient(to right, #5B714C, #F27038)',
       },
       borderImage: {

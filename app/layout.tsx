@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Manrope } from "next/font/google";
+import { Manrope, Urbanist } from "next/font/google";
+import localFont from 'next/font/local';
 
 export const metadata: Metadata = {
   title: "Premier Energy Leadership Awards – Energizing Excellence: Powering the Future Together",
@@ -14,9 +15,19 @@ const ManropeFont = Manrope(
     variable: "--font-manrope",
   },
  
+
   
 );
+
+const localFonts = localFont({
   
+  
+  src: "../public/fonts/Urbanist-Black.ttf",
+  variable: "--font-urban",
+  
+});
+  
+
 
 export default function RootLayout({
   children,
@@ -25,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${ManropeFont.variable}`}>{children}</body>
+      <body className={`${ManropeFont.variable} nothing ${localFonts.variable}`}>{children}</body>
     </html>
   );
 }

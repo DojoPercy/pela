@@ -10,7 +10,7 @@ const MarqueeComp  = () => {
       <h2 className='font-manrope px-5 py-5 text-lg lg:text-2xl text-black font-bold'>
         Top Companies 
       </h2>
-        <Marquee fade={true}>
+        <Marquee fade={true} className='flex justify-center items-center'>
            <img src="/em.png" alt="placeholder" className=' w-44'/>
            <img src="/jp.png" alt="placeholder" className=' w-44'/>
            <img src="/VAURSE LOGO.png" alt="placeholder" className=' w-44'/>
