@@ -10,13 +10,15 @@ const MarqueeComp  = () => {
       <h2 className='font-manrope px-5 py-5 text-lg lg:text-2xl text-black font-bold'>
         Top Companies 
       </h2>
-        <Marquee fade={true} className='flex justify-center items-center'>
-           <img src="/em.png" alt="placeholder" className=' w-44'/>
-           <img src="/jp.png" alt="placeholder" className=' w-44'/>
-           <img src="/VAURSE LOGO.png" alt="placeholder" className=' w-44'/>
-           <img src="/em.png" alt="placeholder" className=' w-44'/>
-           <img src="/jp.png" alt="placeholder" className=' w-44'/>
-           <img src="/VAURSE LOGO.png" alt="placeholder" className=' w-44'/>
+        <Marquee fade={true} className='flex justify-center items-center  py-10'>
+           <div className='flex justify-center items-centers space-x-0'>
+           <img src="/em.png" alt="placeholder" className='lg:h-14 h-14 scale-75   object-cover'/>
+           <img src="/jp.png" alt="placeholder" className='lg:h-14 h-14 scale-75   object-cover'/>
+           <img src="/VAURSE LOGO.png" alt="placeholder" className='lg:h-14 h-14 scale-75    object-cover'/>
+           <img src="/em.png" alt="placeholder" className='lg:h-14 h-14 scale-75   object-cover'/>
+           <img src="/jp.png" alt="placeholder" className='lg:h-14 h-14 scale-75   object-cover'/>
+           <img src="/VAURSE LOGO.png" alt="placeholder" className=' lg:h-14 h-14 scale-75   object-cover'/>
+           </div>
         </Marquee>
     </div>
   )
