@@ -52,13 +52,18 @@ const Header: React.FC = () => {
           <div className="absolute inset-0 flex items-start pt-24  lg:py-28 justify-start lg:justify-start w-full px-2  z-20 lg:px-24">
             <div className="flex flex-col justify-start items-start ">
               <div className="">
-                <h2 className="text-slate-200 font-semibold text-sm lg:text-xl">
+             <div className="flex justify-start items-start">
+             <h2 className="text-slate-200 font-semibold text-sm lg:text-xl">
                   MIDDLE EAST & AFRICA
                 </h2>
+                <h3 className="text-slate-300 font-semibold text-xs lg:text-sm ml-[100px]">
+                  16th-17th October {year}
+                </h3>
+             </div>
                 <h1 className="text-[1.8rem] lg:text-[5.5rem] text-white z-20 font-urban h-full w-[100%] whitespace-nowrap font-[900] relative leading-[1]">
                   Attend The Premier
                   <br /> Energy Leadership
-                  <TextSlider TEXTS={[" Conference.", ` Awards ${year}.`]} />
+                  <TextSlider TEXTS={[" Conference & ", ` Awards ${year}.`]} />
                 </h1>
               
               </div>
